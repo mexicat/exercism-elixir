@@ -62,11 +62,6 @@ defmodule Hand do
   defp check_min_straight(cards), do: cards
 
   defp score_hand(cards) do
-    # IO.puts("val")
-    # IO.inspect(cards |> sort_by_value)
-    # IO.puts("amt")
-    # IO.inspect(cards |> sort_by_amount)
-
     {score, ordered} =
       cards |> sort |> has_straight_flush? ||
         cards |> sort |> has_four_of_a_kind? ||
