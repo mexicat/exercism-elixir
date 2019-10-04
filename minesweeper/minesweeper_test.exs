@@ -34,19 +34,19 @@ defmodule MinesweeperTest do
     assert Minesweeper.annotate(clean(b)) == b
   end
 
-  @tag :pending
+  # @tag :pending
   test "horizontal line" do
     b = ["1*2*1"]
     assert Minesweeper.annotate(clean(b)) == b
   end
 
-  @tag :pending
+  # @tag :pending
   test "vertical line" do
     b = ["1", "*", "2", "*", "1"]
     assert Minesweeper.annotate(clean(b)) == b
   end
 
-  @tag :pending
+  # @tag :pending
   test "cross" do
     b = [" 2*2 ", "25*52", "*****", "25*52", " 2*2 "]
     assert Minesweeper.annotate(clean(b)) == b
